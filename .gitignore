@@ -7,3 +7,5 @@ VisualBariga/bin/
 **/.vs/
 **/obj/
 **/bin/
+*.exe
+*.suo

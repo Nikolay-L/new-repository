@@ -19,23 +19,34 @@ namespace VisualBariga.RootController
 
         public void Start()
         {
-             rates = new BarigaRates();
+            rates = new BarigaRates();
 
             _mainScreen = new MainScreen(rates);
             _mainScreen.Show();
+            MainScreenSubscribe();
+        }
+
+        private void MainScreenSubscribe()
+        {
             _mainScreen.YesButtonClicked += _mainScreen_YesButtonClicked;
             _mainScreen.NoButtonClicked += _mainScreen_NoButtonClicked;
         }
 
-        private void _mainScreen_NoButtonClicked()
+        private void MainScreenUnsubscribe()
         {
             _mainScreen.NoButtonClicked -= _mainScreen_NoButtonClicked;
-            _mainScreen.Close();
+            _mainScreen.NoButtonClicked -= _mainScreen_NoButtonClicked;
         }
 
+        private void _mainScreen_NoButtonClicked()
+        {
+            MainScreenUnsubscribe();
+            _mainScreen.Close();
+        }
+               
         private void _mainScreen_YesButtonClicked()
         {
-            _mainScreen.YesButtonClicked -= _mainScreen_YesButtonClicked;
+            MainScreenUnsubscribe();
             makeChoice = new ChooseScreen();
             _mainScreen.Close();
             makeChoice.Show();

@@ -38,8 +38,8 @@ namespace VisualBariga.View
         {
             var GrnText = GrnNaObmin.Text;
             double GrnSum;
-            var GrnValue = double.TryParse(GrnText, out GrnSum);
-            if (GrnSum < 100)
+            var isCanExchange = double.TryParse(GrnText, out GrnSum);
+            if (!isCanExchange || GrnSum < 100)
             {
                 Result.Text = "PNX";
             }

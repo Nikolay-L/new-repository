@@ -73,7 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\BarigaRates.cs" />
-    <Compile Include="Model\Converter.cs" />
     <Compile Include="RootController\Controller.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="View\ChooseScreen.xaml.cs">
