@@ -1,0 +1,16 @@
+﻿<Window x:Class="VisualBariga.View.ChooseScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualBariga.View"
+        mc:Ignorable="d"
+        Title="ChooseScreen" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sho Kyplyaesh?" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Margin="217,23,0,0" Height="72" Width="358"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sho Kyplyaesh?" FontSize="40" TextAlignment="Center" VerticalAlignment="Top" Margin="217,23,0,0" Height="72" Width="358"/>
+        <Button Name="PickedUSD" Content="USD" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Margin="158,201,0,0" Height="69"/>
+        <Button Name="PickedEuro" Content="EURO" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Width="163" Margin="448,201,0,0" Height="69"/>
+
+    </Grid>
+</Window>
