@@ -1,11 +1,5 @@
-*/.vs/
-*/obj/
-*/bin/
 VisualBariga/.vs/
 VisualBariga/obj/
 VisualBariga/bin/
-**/.vs/
-**/obj/
-**/bin/
 *.exe
 *.suo
