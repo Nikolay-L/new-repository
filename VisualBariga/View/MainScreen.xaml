@@ -1,0 +1,19 @@
+﻿<Window x:Class="VisualBariga.MainScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualBariga"
+        mc:Ignorable="d"
+        Title="MainScreen" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Kyrs Barigu" TextAlignment="Center" FontStyle="Normal" FontWeight="Bold" FontSize="40" VerticalAlignment="Top" Margin="236,33,0,0" Height="50" Width="281"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="USD" TextAlignment="Center" FontSize="50" VerticalAlignment="Top" Margin="236,111,0,0" Height="69" Width="125"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Euro" TextAlignment="Center" FontSize="50" VerticalAlignment="Top" Margin="236,218,0,0" Height="69" Width="125"/>
+        <TextBox Name="UsdKurs" HorizontalAlignment="Left" FontSize="50" FontWeight="Bold" TextAlignment="Center" Height="69" Margin="394,111,0,0" TextWrapping="Wrap" IsReadOnly="True" VerticalAlignment="Top" Width="123"/>
+        <TextBox Name="EuroKurs" HorizontalAlignment="Left" FontSize="50" FontWeight="Bold" TextAlignment="Center" Height="69" Margin="394,218,0,0" TextWrapping="Wrap" IsReadOnly="True" VerticalAlignment="Top" Width="123"/>
+        <Button Name="Yes" Content="NORM, GO MINYAEM!" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Margin="207,329,0,0" Height="54"/>
+        <Button Name="No" Content="PISHOV NAH!!!" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Margin="408,329,0,0" Height="54" RenderTransformOrigin="0.526,0.517"/>
+
+    </Grid>
+</Window>
