@@ -20,8 +20,8 @@ namespace VisualBariga
     /// </summary>
     public partial class MainScreen : Window
     {
-        public event Action YesButtonClicked = delegate { };
-        public event Action NoButtonClicked = delegate { };
+        public event Action<bool> ButtonClicked = delegate { };
+
         public MainScreen(BarigaRates rates)
         {
             InitializeComponent();
@@ -34,13 +34,13 @@ namespace VisualBariga
         private void No_Click(object sender, RoutedEventArgs e)
         {
             No.Click -= No_Click;
-            NoButtonClicked();
+            ButtonClicked(false);
         }
 
         private void Yes_Click(object sender, RoutedEventArgs e)
         {
             Yes.Click -= Yes_Click;
-            YesButtonClicked();
+            ButtonClicked(true);
         }
     }
 }

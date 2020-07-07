@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using VisualBariga.Model;
 
 namespace VisualBariga.View
 {
@@ -19,8 +9,10 @@ namespace VisualBariga.View
     /// </summary>
     public partial class ChooseScreen : Window
     {
-        public event Action UsdButtonClicked = delegate { };
-        public event Action EuroButtonClicked = delegate { };
+        //public event Action<Currency> CurrencySelected = delegate { };
+        public event Action CurrencySelected = delegate { };
+        public Currency CurrencyThatUserChoose { get; private set; }
+
         public ChooseScreen()
         {
             InitializeComponent();
@@ -30,12 +22,16 @@ namespace VisualBariga.View
 
         private void PickedEuro_Click(object sender, RoutedEventArgs e)
         {
-            EuroButtonClicked();
+            //CurrencySelected(Currency.Euro);
+            CurrencyThatUserChoose = Currency.Euro;
+            CurrencySelected();
         }
 
         private void PickedUSD_Click(object sender, RoutedEventArgs e)
         {
-            UsdButtonClicked();
+            //CurrencySelected(Currency.Usd);
+            CurrencyThatUserChoose = Currency.Usd;
+            CurrencySelected();
         }
     }
 }

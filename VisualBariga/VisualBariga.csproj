@@ -72,8 +72,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\ChooseController.cs" />
+    <Compile Include="Controller\GoZaygolController.cs" />
+    <Compile Include="Controller\ObminController.cs" />
     <Compile Include="Model\BarigaRates.cs" />
-    <Compile Include="RootController\Controller.cs" />
+    <Compile Include="Model\Currency.cs" />
+    <Compile Include="Controller\RootController.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="View\ChooseScreen.xaml.cs">
       <DependentUpon>ChooseScreen.xaml</DependentUpon>
@@ -102,6 +106,7 @@
     <Compile Include="View\ZaYglom.xaml.cs">
       <DependentUpon>ZaYglom.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Warehouse\RatesWarehouse.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using VisualBariga.RootController;
+using VisualBariga.Controller;
 
 namespace VisualBariga
 {
@@ -14,7 +14,7 @@ namespace VisualBariga
         {
             base.OnStartup(e);
 
-            var controller = new Controller();
+            var controller = new RootController();
             controller.Start();
         }
     }

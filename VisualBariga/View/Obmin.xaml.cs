@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using VisualBariga.Model;
+using VisualBariga.Warehouse;
 
 namespace VisualBariga.View
 {
@@ -20,18 +21,27 @@ namespace VisualBariga.View
     /// </summary>
     public partial class Obmin : Window
     {
-        public event Action ConvertClicked = delegate { };
+        public event Action<string> ConvertClicked = delegate { };
+
         private BarigaRates barigaRates;
-        public Obmin(BarigaRates rates)
+
+        public Obmin(BarigaRates rates, Currency selectedCurrency)
         {
             barigaRates = rates;
             InitializeComponent();
             Convert.Click += Convert_Click;
+            TittleName.Text = $"BLIN NU LADNO, DAM TOBI {selectedCurrency}";
+            ResultTittle.Text = $"Resultat, {selectedCurrency}";
         }
 
         private void Convert_Click(object sender, RoutedEventArgs e)
         {
-            ConvertToUsd();
+            ConvertClicked(GrnNaObmin.Text);
+        }
+
+        public void ShowResult(string result)
+        {
+            Result.Text = result;
         }
 
         private void ConvertToUsd()

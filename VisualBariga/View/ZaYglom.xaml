@@ -18,7 +18,7 @@
         <TextBlock TextWrapping="Wrap" FontSize="20" TextAlignment="Center" Text="GO TORGYVATUS BARIGA, DAM" VerticalAlignment="Top" Margin="37,183,343.6,0" Grid.Column="4" Height="33"/>
         <TextBox Name="SetKurs" Grid.Column="4" HorizontalAlignment="Left" Height="36" Margin="401,180,0,0" TextWrapping="Wrap" FontSize="24" VerticalAlignment="Top" Width="90"/>
         <Button Name="Norm" Content="BILSHE NE DAM" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Grid.Column="4" Margin="261,303,0,0" Height="49"/>
-        <TextBlock TextWrapping="Wrap" FontSize="20" TextAlignment="Center" Text="ZA 1 Y.O." VerticalAlignment="Top" Margin="520,180,59.6,0" Grid.Column="4" Height="36" RenderTransformOrigin="0.569,1.375"/>
+        <TextBlock Name="CurrencyIndication" TextWrapping="Wrap" FontSize="20" TextAlignment="Center" Text="ZA 1 Y.O." VerticalAlignment="Top" Margin="520,180,59.6,0" Grid.Column="4" Height="36" RenderTransformOrigin="0.569,1.375"/>
 
     </Grid>
 </Window>

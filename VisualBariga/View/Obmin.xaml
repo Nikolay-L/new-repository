@@ -11,8 +11,8 @@
         <TextBox Name="GrnNaObmin" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" FontSize="28" TextAlignment="Center" VerticalAlignment="Top" Width="131" Margin="468,103,0,0"/>
         <TextBox Name="Result" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" FontSize="28" TextAlignment="Center" IsReadOnly="True" VerticalAlignment="Top" Width="131" Margin="468,244,0,0"/>
         <Button Name="Convert" FontSize="25" Content="Convert" HorizontalAlignment="Left" VerticalAlignment="Top" Width="253" Margin="263,342,0,0" Height="49"/>
-        <TextBlock HorizontalAlignment="Left" Margin="282,244,0,0" TextWrapping="Wrap" Text="Resultat" FontSize="25" VerticalAlignment="Top" Height="41" Width="121"/>
-        <TextBlock HorizontalAlignment="Left" Margin="297,10,0,0" TextWrapping="Wrap" Text="BLIN NY LADNO" FontSize="25" VerticalAlignment="Top" Height="41" Width="200"/>
+        <TextBlock Name="ResultTittle" HorizontalAlignment="Left" Margin="229,244,0,0" TextWrapping="Wrap" Text="Resultat" FontSize="25" VerticalAlignment="Top" Height="41" Width="174"/>
+        <TextBlock Name="TittleName" HorizontalAlignment="Left" Margin="229,10,0,0" TextWrapping="Wrap" Text="BLIN NY LADNO" FontSize="25" VerticalAlignment="Top" Height="41" Width="399"/>
 
     </Grid>
 </Window>
